@@ -45,6 +45,8 @@ jobs:
     steps:
       - run: |
           echo [TEST STEP]
+          pwd
+          ls -al
           npm install
           npm run test:unit -- --coverage
 
