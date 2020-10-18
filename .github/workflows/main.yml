@@ -44,8 +44,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo [TEST STEP] \
-          npm install \
+          echo [TEST STEP]
+          npm install
           npm run test:unit -- --coverage
 
   sonarcloud:
