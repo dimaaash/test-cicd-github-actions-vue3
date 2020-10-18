@@ -43,9 +43,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: |
           echo [TEST STEP]
-          cd ..
           pwd
           ls -al
           npm install
