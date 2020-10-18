@@ -45,6 +45,7 @@ jobs:
     steps:
       - run: |
           echo [TEST STEP]
+          cd ..
           pwd
           ls -al
           npm install
