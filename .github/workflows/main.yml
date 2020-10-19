@@ -64,13 +64,13 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v2
-      - run: |
-          ls -al
       - uses: actions/checkout@v2
         with:
           # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
+      - run: |
+          ls -al
+      - uses: actions/download-artifact@v2
       - run: |
           ls -al
       - name: SonarCloud Scan
