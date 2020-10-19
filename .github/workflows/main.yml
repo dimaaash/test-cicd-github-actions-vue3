@@ -39,6 +39,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+
   test:
     needs: build
     runs-on: ubuntu-latest
@@ -50,12 +51,20 @@ jobs:
           ls -al
           npm install
           npm run test:unit -- --coverage
+          mv test-report.xml ./coverage
+          ls -al coverage
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage-report
+          path: coverage
+
 
   sonarcloud:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
         with:
           # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
