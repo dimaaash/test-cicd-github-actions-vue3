@@ -123,6 +123,16 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  data: function() {
+    return {
+      isOpened: false
+    };
+  },
+  methods: {
+    toggleOpened() {
+      this.isOpened = !this.isOpened;
+    }
   }
 };
 </script>

@@ -1,5 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import HelloWorld from "@/components/HelloWorld.vue";
+import realstore from "@/store";
 
 describe("HelloWorld.vue", () => {
   it("renders props.msg when passed", () => {
@@ -12,3 +13,9 @@ describe("HelloWorld.vue", () => {
 });
 
 
+test('store mutation toggleTermsModal', () => {
+  const commitSpy = jest.spyOn(realstore, 'commit');
+  realstore.commit('TOGGLE_OPENED');
+  expect(realstore.state.woot.isOpened).toBe(true);
+  expect(commitSpy).toHaveBeenCalledWith('TOGGLE_OPENED');
+});
