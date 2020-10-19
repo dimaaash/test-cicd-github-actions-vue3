@@ -72,8 +72,8 @@ jobs:
       - run: |
           ls -al
       - uses: actions/download-artifact@v2
-        with:
-          name: coverage
+#        with:
+#          name: coverage
       - run: |
           ls -al
           ls -al coverage/
