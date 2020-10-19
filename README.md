@@ -1,5 +1,10 @@
 # test-cicd-github-actions-vue3
 
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=dimaaash_test-cicd-github-actions-vue3&metric=coverage)](https://sonarcloud.io/dashboard?id=dimaaash_test-cicd-github-actions-vue3)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=dimaaash_test-cicd-github-actions-vue3&metric=bugs)](https://sonarcloud.io/dashboard?id=dimaaash_test-cicd-github-actions-vue3)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=dimaaash_test-cicd-github-actions-vue3&metric=code_smells)](https://sonarcloud.io/dashboard?id=dimaaash_test-cicd-github-actions-vue3)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=dimaaash_test-cicd-github-actions-vue3&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=dimaaash_test-cicd-github-actions-vue3)
+
 ## Project setup
 ```
 yarn install
