@@ -50,7 +50,7 @@ jobs:
           pwd
           ls -al
           npm install
-          npm run test:unit -- --coverage
+          npm run test:unit -s -- --coverage
           mv test-report.xml ./coverage
           ls -al coverage
       - name: Archive code coverage results
