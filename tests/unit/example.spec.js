@@ -19,3 +19,6 @@ test('store mutation toggleTermsModal', () => {
   expect(realstore.state.woot.isOpened).toBe(true);
   expect(commitSpy).toHaveBeenCalledWith('TOGGLE_OPENED');
 });
+
+
+
